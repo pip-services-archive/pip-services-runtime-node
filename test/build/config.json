@@ -1,0 +1,47 @@
+{
+    "logs": { 
+        "descriptor": {
+            "type": "console"
+        } 
+    },
+    
+    "counters": {
+        "descriptor": {
+            "type": "log"
+        }
+    },
+
+    "cache": {
+        "descriptor": {
+            "type": "memory"
+        },
+        "options": {
+            "timeout": 10000
+        }
+    },
+    
+    "persistence": {
+        "descriptor": {
+            "type": "file"
+        },
+        "options": {
+            "path": "./data/dummies.json",
+            "data": [] 
+        }
+    },
+    
+    "clients": {
+        "descriptor": {
+            "group": "pip-services-dummies",
+            "type": "seneca"
+        }
+    },
+    
+    "services": [
+        {
+            "descriptor": {
+                "type": "seneca"
+            }
+        }
+    ]
+}
